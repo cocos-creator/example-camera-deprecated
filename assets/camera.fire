@@ -319,6 +319,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -328,12 +333,7 @@
       "__type__": "cc.Size",
       "width": 205,
       "height": 41
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -451,6 +451,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 300,
@@ -460,12 +465,7 @@
       "__type__": "cc.Size",
       "width": 600,
       "height": 250
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -583,6 +583,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 159.5,
@@ -592,12 +597,7 @@
       "__type__": "cc.Size",
       "width": 319,
       "height": 438
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -715,6 +715,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -724,12 +729,7 @@
       "__type__": "cc.Size",
       "width": 205,
       "height": 41
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -847,6 +847,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -856,12 +861,7 @@
       "__type__": "cc.Size",
       "width": 205,
       "height": 41
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -979,6 +979,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 1490,
@@ -988,12 +993,7 @@
       "__type__": "cc.Size",
       "width": 2980,
       "height": 61.4
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1122,7 +1122,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 397,
-      "y": 506
+      "y": 301
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1189,17 +1189,17 @@
     },
     "_enabled": true,
     "tag": 100,
+    "_density": 1,
+    "_sensor": true,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
       "y": 0
     },
-    "_radius": 30,
-    "_density": 1,
-    "_sensor": true,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_radius": 30
   },
   {
     "__type__": "cc.Node",
@@ -1317,6 +1317,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 159.5,
@@ -1326,12 +1331,7 @@
       "__type__": "cc.Size",
       "width": 319,
       "height": 915
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1449,6 +1449,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 159.5,
@@ -1458,12 +1463,7 @@
       "__type__": "cc.Size",
       "width": 319,
       "height": 919
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1483,10 +1483,10 @@
         "__id__": 45
       },
       {
-        "__id__": 50
+        "__id__": 51
       },
       {
-        "__id__": 51
+        "__id__": 52
       }
     ],
     "_prefab": null,
@@ -1580,8 +1580,11 @@
     "target": {
       "__id__": 43
     },
-    "anim": {
+    "camera": {
       "__id__": 49
+    },
+    "anim": {
+      "__id__": 50
     },
     "jumpZoom": false,
     "centerAtStart": false,
@@ -1602,6 +1605,7 @@
         "__id__": 31
       }
     ],
+    "overviewMargin": 0,
     "speedZoom": false,
     "zoomInSpeed": 300,
     "zoomOutSpeed": 800,
@@ -1618,23 +1622,76 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Camera",
+    "_name": "CameraContainer",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
+    },
+    "_children": [
+      {
+        "__id__": 48
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 46
+      }
+    ],
+    "_prefab": null,
+    "_id": "e34e9DAdAdHX4xpjXKguBoL",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Camera",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 47
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 48
-      },
-      {
-        "__id__": 46
-      },
-      {
         "__id__": 49
+      },
+      {
+        "__id__": 50
       }
     ],
     "_prefab": null,
@@ -1679,7 +1736,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 47
+      "__id__": 48
     },
     "_enabled": true,
     "_targets": [
@@ -1697,7 +1754,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 47
+      "__id__": 48
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -1740,6 +1797,11 @@
     },
     "_enabled": true,
     "tag": 0,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0,
+    "_restitution": 0,
+    "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1749,11 +1811,6 @@
       "__type__": "cc.Size",
       "width": 80,
       "height": 100
-    },
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0,
-    "_restitution": 0,
-    "body": null
+    }
   }
 ]

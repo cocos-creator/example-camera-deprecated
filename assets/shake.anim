@@ -3,31 +3,93 @@
   "_name": "shake",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.26666666666666666,
+  "_duration": 0.6,
   "sample": 30,
   "speed": 1,
   "wrapMode": 2,
   "curveData": {
     "props": {
-      "rotation": [
+      "x": [
         {
           "frame": 0,
           "value": 0
         },
         {
           "frame": 0.06666666666666667,
-          "value": -3
+          "value": 5
         },
         {
           "frame": 0.13333333333333333,
-          "value": 0
+          "value": -6
         },
         {
           "frame": 0.2,
-          "value": 3
+          "value": -13
         },
         {
           "frame": 0.26666666666666666,
+          "value": 3
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": -5
+        },
+        {
+          "frame": 0.4,
+          "value": 2
+        },
+        {
+          "frame": 0.4666666666666667,
+          "value": -8
+        },
+        {
+          "frame": 0.5333333333333333,
+          "value": 3
+        },
+        {
+          "frame": 0.6,
+          "value": 0
+        }
+      ],
+      "y": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.06666666666666667,
+          "value": 7
+        },
+        {
+          "frame": 0.13333333333333333,
+          "value": 7
+        },
+        {
+          "frame": 0.2,
+          "value": -3
+        },
+        {
+          "frame": 0.26666666666666666,
+          "value": -6
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": 5
+        },
+        {
+          "frame": 0.4,
+          "value": -8
+        },
+        {
+          "frame": 0.4666666666666667,
+          "value": -10
+        },
+        {
+          "frame": 0.5333333333333333,
+          "value": 10
+        },
+        {
+          "frame": 0.6,
           "value": 0
         }
       ]

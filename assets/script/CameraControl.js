@@ -6,6 +6,7 @@ cc.Class({
             default: null,
             type: cc.Node
         },
+        camera: cc.Camera,
         anim: cc.Animation,
         //Jump Zoom
         jumpZoom: false,
@@ -45,6 +46,12 @@ cc.Class({
                 return this.overview;
             }            
         },
+        overviewMargin: {
+            default: 0,
+            visible () {
+                return this.overview;
+            }
+        },        
         //Speed Zoom
         speedZoom: false,
         zoomInSpeed: {
@@ -111,7 +118,6 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        this.camera = this.getComponent(cc.Camera);
         this.startFollow = false;
         let canvas = cc.find('Canvas').getComponent(cc.Canvas); 
         this.visibleSize = cc.view.getVisibleSize();
@@ -183,8 +189,8 @@ cc.Class({
         if (this.speedZoom) {
             let curSpeed = Math.abs(this.previousPos.x - targetPos.x) / dt;
             let ratio = 0;
-            if (curSpeed > this.zoomInSpeed) {
-                ratio = 1 - (curSpeed - this.zoomInSpeed) / (this.zoomOutSpeed  - this.zoomInSpeed);
+            if (curSpeed > this.zoomOutSpeed) {
+                ratio = 1 - (curSpeed - this.zoomOutSpeed) / (this.zoomInSpeed  - this.zoomOutSpeed);
                 this.camera.zoomRatio = cc.lerp(this.camera.zoomRatio, ratio, 0.02);
             } else {
                 this.camera.zoomRatio = cc.lerp(this.camera.zoomRatio, this.initZoomRatio, 0.02);
@@ -232,14 +238,16 @@ cc.Class({
             minX = target.x < minX ? target.x : minX;
             maxY = target.y > maxY ? target.y : maxY;
             minY = target.y < minY ? target.y : minY;
-            midPoint.x += target.x;
-            midPoint.y += target.y;
         }
+        maxX += this.overviewMargin;
+        minX -= this.overviewMargin;
+        maxY += this.overviewMargin;
+        minY -= this.overviewMargin;
         let distX = Math.abs(maxX - minX);
         let distY = Math.abs(maxY - minY);
+        midPoint = cc.p(minX + distX/2, minY + distY/2);
         let ratio = Math.max(distX / this.visibleSize.width, distY / this.visibleSize.height);
         this.camera.zoomRatio = 1/ratio;
-        midPoint = cc.pMult(midPoint, 1/this.overviewTargets.length);
         return midPoint;
     },
 
@@ -251,7 +259,7 @@ cc.Class({
 
     stopShake () {
         this.anim.stop();
-        this.node.rotation = 0;
+        this.camera.node.position = cc.p(0, 0);
     },
 
     onMouseMove (event) {
