@@ -132,7 +132,7 @@ cc.Class({
             this.overview = false;
             this.speedZoom = false;
             canvas.node.on('mousemove', this.onMouseMove, this);
-            // canvas.node.on('touchmove', this.onTouchMove, this);
+            canvas.node.on('touchmove', this.onTouchMove, this);
             this.pointerPos = null;
         }
         if (this.overview) {
@@ -264,9 +264,9 @@ cc.Class({
 
     onMouseMove (event) {
         this.pointerPos = event.getLocation();
-    }
+    },
 
-    // onTouchMove (event) {
-    //     this.pointerPos = event.getLocation();
-    // }    
+    onTouchMove (event) {
+        this.pointerPos = event.getLocation();
+    }    
 });

@@ -1587,7 +1587,7 @@
       "__id__": 50
     },
     "jumpZoom": false,
-    "centerAtStart": false,
+    "centerAtStart": true,
     "smoothFollow": false,
     "followX": 350,
     "followY": 120,
@@ -1605,10 +1605,10 @@
         "__id__": 31
       }
     ],
-    "overviewMargin": 0,
+    "overviewMargin": 80,
     "speedZoom": false,
-    "zoomInSpeed": 300,
-    "zoomOutSpeed": 800,
+    "zoomInSpeed": 800,
+    "zoomOutSpeed": 300,
     "canShake": false,
     "shakeDuration": 0.5,
     "pointerPan": false,
